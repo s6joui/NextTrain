@@ -1,0 +1,4 @@
+"minutes_remaining" = "%.f분";
+"stations_remaining" = "%d번째 전역";
+"arriving_soon" = "곧 도착";
+"station_name" = "지하철역명";
