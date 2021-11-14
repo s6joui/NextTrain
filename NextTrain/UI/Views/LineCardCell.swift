@@ -23,6 +23,7 @@ class LineCardCell: UITableViewCell {
 
     let lineNameLabel: LineNameLabel = {
         let label = LineNameLabel()
+        label.setContentHuggingPriority(.defaultLow, for: .horizontal)
         return label
     }()
 
@@ -31,6 +32,9 @@ class LineCardCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textColor = .white
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.8
+        label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return label
     }()
 
@@ -60,7 +64,8 @@ class LineCardCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.numberOfLines = 0
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.4
         label.font = .boldSystemFont(ofSize: 26)
         label.textAlignment = .center
         return label
@@ -70,7 +75,8 @@ class LineCardCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.numberOfLines = 0
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.4
         label.font = .boldSystemFont(ofSize: 26)
         label.textAlignment = .center
         return label
@@ -190,22 +196,23 @@ class LineCardCell: UITableViewCell {
             titleStack.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
             titleStack.topAnchor.constraint(equalTo: headerView.topAnchor),
             titleStack.bottomAnchor.constraint(equalTo: headerView.bottomAnchor),
-            leftStationLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 16),
+            leftStationLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 12),
             leftStationLabel.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
+            leftStationLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 64),
             leftArrowImage.leadingAnchor.constraint(equalTo: leftStationLabel.trailingAnchor),
             leftArrowImage.trailingAnchor.constraint(equalTo: titleStack.leadingAnchor),
             leftArrowImage.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
-            rightStationLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -16),
+            rightStationLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -12),
             rightStationLabel.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
+            rightStationLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 64),
             rightArrowImage.leadingAnchor.constraint(equalTo: titleStack.trailingAnchor),
             rightArrowImage.trailingAnchor.constraint(equalTo: rightStationLabel.leadingAnchor),
             rightArrowImage.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
-            lineNameLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 28),
             lineNameLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 28),
             rightArrowImage.heightAnchor.constraint(equalToConstant: 28),
             leftArrowImage.heightAnchor.constraint(equalToConstant: 28),
-            rightArrowImage.widthAnchor.constraint(equalToConstant: 64),
-            leftArrowImage.widthAnchor.constraint(equalToConstant: 64),
+            rightArrowImage.widthAnchor.constraint(equalToConstant: 44),
+            leftArrowImage.widthAnchor.constraint(equalToConstant: 44),
         ])
 
         return headerView

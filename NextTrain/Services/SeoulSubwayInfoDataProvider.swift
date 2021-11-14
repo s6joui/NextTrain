@@ -48,8 +48,6 @@ class SeoulSubwayInfoDataProvider: SubwayInfoDataProvider {
         "1077": UIColor(red: 0.95, green: 0.85, blue: 0.12, alpha: 1.00),
     ]
 
-    var stations: [SubwayStation] = []
-
     func fetchStation(from query: String) -> SubwayStation {
         return SubwayStation(id: "0", name: "Test")
     }

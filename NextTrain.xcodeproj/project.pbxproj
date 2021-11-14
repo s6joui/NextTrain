@@ -13,12 +13,14 @@
 		D429798D273FA414003BE995 /* StationSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429798C273FA414003BE995 /* StationSearchResultsViewController.swift */; };
 		D429798F273FFF04003BE995 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429798E273FFF04003BE995 /* Environment.swift */; };
 		D4297991273FFFA8003BE995 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4297990273FFFA8003BE995 /* Secrets.plist */; };
+		D4297996274015CF003BE995 /* LineCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4297995274015CF003BE995 /* LineCardViewModel.swift */; };
+		D429799827401734003BE995 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429799727401734003BE995 /* MainViewModelTests.swift */; };
+		D429799A27401809003BE995 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429799927401809003BE995 /* FakeData.swift */; };
 		D45286DF27325CD0001E2153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286DE27325CD0001E2153 /* AppDelegate.swift */; };
 		D45286E127325CD0001E2153 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286E027325CD0001E2153 /* SceneDelegate.swift */; };
-		D45286E327325CD0001E2153 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286E227325CD0001E2153 /* ViewController.swift */; };
+		D45286E327325CD0001E2153 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286E227325CD0001E2153 /* MainViewController.swift */; };
 		D45286E827325CD2001E2153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45286E727325CD2001E2153 /* Assets.xcassets */; };
 		D45286EB27325CD2001E2153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45286E927325CD2001E2153 /* LaunchScreen.storyboard */; };
-		D45286F627325CD2001E2153 /* NextTrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286F527325CD2001E2153 /* NextTrainTests.swift */; };
 		D452871227325E76001E2153 /* SubwayInfoDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452871127325E76001E2153 /* SubwayInfoDataProvider.swift */; };
 		D452871427325E99001E2153 /* SubwayStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452871327325E99001E2153 /* SubwayStation.swift */; };
 		D452871627325F06001E2153 /* ArrivalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452871527325F06001E2153 /* ArrivalDataProvider.swift */; };
@@ -45,13 +47,6 @@
 			remoteGlobalIDString = D45286DA27325CD0001E2153;
 			remoteInfo = NextTrain;
 		};
-		D45286FD27325CD2001E2153 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45286D327325CD0001E2153 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D45286DA27325CD0001E2153;
-			remoteInfo = NextTrain;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -61,17 +56,18 @@
 		D429798C273FA414003BE995 /* StationSearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchResultsViewController.swift; sourceTree = "<group>"; };
 		D429798E273FFF04003BE995 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		D4297990273FFFA8003BE995 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		D4297995274015CF003BE995 /* LineCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineCardViewModel.swift; sourceTree = "<group>"; };
+		D429799727401734003BE995 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		D429799927401809003BE995 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		D45286DB27325CD0001E2153 /* NextTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45286DE27325CD0001E2153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D45286E027325CD0001E2153 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D45286E227325CD0001E2153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D45286E227325CD0001E2153 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D45286E727325CD2001E2153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D45286EA27325CD2001E2153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D45286EC27325CD2001E2153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45286F127325CD2001E2153 /* NextTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D45286F527325CD2001E2153 /* NextTrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTrainTests.swift; sourceTree = "<group>"; };
 		D45286F727325CD2001E2153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D45286FC27325CD2001E2153 /* NextTrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextTrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D452871127325E76001E2153 /* SubwayInfoDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayInfoDataProvider.swift; sourceTree = "<group>"; };
 		D452871327325E99001E2153 /* SubwayStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayStation.swift; sourceTree = "<group>"; };
 		D452871527325F06001E2153 /* ArrivalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalDataProvider.swift; sourceTree = "<group>"; };
@@ -105,16 +101,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D45286F927325CD2001E2153 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4297994274015A3003BE995 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D41DC12927354BBD00345740 /* LineCardCell.swift */,
+				D4297995274015CF003BE995 /* LineCardViewModel.swift */,
+				D4297988273F7503003BE995 /* ArrrivalInfoView.swift */,
+				D47DF0C627328A990036F1FC /* ArrivalCardViewModel.swift */,
+				D4990E1927391524000697DE /* LineNameLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D45286D227325CD0001E2153 = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +130,6 @@
 			children = (
 				D45286DB27325CD0001E2153 /* NextTrain.app */,
 				D45286F127325CD2001E2153 /* NextTrainTests.xctest */,
-				D45286FC27325CD2001E2153 /* NextTrainUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,8 +157,9 @@
 		D45286F427325CD2001E2153 /* NextTrainTests */ = {
 			isa = PBXGroup;
 			children = (
-				D45286F527325CD2001E2153 /* NextTrainTests.swift */,
 				D4990E1B27393507000697DE /* ArrivalCardViewModelTests.swift */,
+				D429799727401734003BE995 /* MainViewModelTests.swift */,
+				D429799927401809003BE995 /* FakeData.swift */,
 				D45286F727325CD2001E2153 /* Info.plist */,
 			);
 			path = NextTrainTests;
@@ -188,13 +189,10 @@
 		D452871027325E30001E2153 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D45286E227325CD0001E2153 /* ViewController.swift */,
-				D429798C273FA414003BE995 /* StationSearchResultsViewController.swift */,
-				D47DF0C627328A990036F1FC /* ArrivalCardViewModel.swift */,
+				D4297994274015A3003BE995 /* Views */,
+				D45286E227325CD0001E2153 /* MainViewController.swift */,
 				D47DF0BD273270020036F1FC /* MainViewModel.swift */,
-				D41DC12927354BBD00345740 /* LineCardCell.swift */,
-				D4297988273F7503003BE995 /* ArrrivalInfoView.swift */,
-				D4990E1927391524000697DE /* LineNameLabel.swift */,
+				D429798C273FA414003BE995 /* StationSearchResultsViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -264,24 +262,6 @@
 			productReference = D45286F127325CD2001E2153 /* NextTrainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D45286FB27325CD2001E2153 /* NextTrainUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D452870B27325CD2001E2153 /* Build configuration list for PBXNativeTarget "NextTrainUITests" */;
-			buildPhases = (
-				D45286F827325CD2001E2153 /* Sources */,
-				D45286F927325CD2001E2153 /* Frameworks */,
-				D45286FA27325CD2001E2153 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D45286FE27325CD2001E2153 /* PBXTargetDependency */,
-			);
-			name = NextTrainUITests;
-			productName = NextTrainUITests;
-			productReference = D45286FC27325CD2001E2153 /* NextTrainUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -295,10 +275,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					D45286F027325CD2001E2153 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = D45286DA27325CD0001E2153;
-					};
-					D45286FB27325CD2001E2153 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = D45286DA27325CD0001E2153;
 					};
@@ -319,7 +295,6 @@
 			targets = (
 				D45286DA27325CD0001E2153 /* NextTrain */,
 				D45286F027325CD2001E2153 /* NextTrainTests */,
-				D45286FB27325CD2001E2153 /* NextTrainUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,13 +319,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D45286FA27325CD2001E2153 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,13 +331,14 @@
 				D452871427325E99001E2153 /* SubwayStation.swift in Sources */,
 				D47DF0C727328A990036F1FC /* ArrivalCardViewModel.swift in Sources */,
 				D429798D273FA414003BE995 /* StationSearchResultsViewController.swift in Sources */,
-				D45286E327325CD0001E2153 /* ViewController.swift in Sources */,
+				D45286E327325CD0001E2153 /* MainViewController.swift in Sources */,
 				D4297989273F7503003BE995 /* ArrrivalInfoView.swift in Sources */,
 				D4990E1A27391524000697DE /* LineNameLabel.swift in Sources */,
 				D45286DF27325CD0001E2153 /* AppDelegate.swift in Sources */,
 				D452871A2732604C001E2153 /* SeoulSubwayArrivalDataProvider.swift in Sources */,
 				D429798F273FFF04003BE995 /* Environment.swift in Sources */,
 				D452871827325F24001E2153 /* ArrivalInfo.swift in Sources */,
+				D4297996274015CF003BE995 /* LineCardViewModel.swift in Sources */,
 				D45286E127325CD0001E2153 /* SceneDelegate.swift in Sources */,
 				D4990E1827390C2E000697DE /* CsvReader.swift in Sources */,
 				D452871627325F06001E2153 /* ArrivalDataProvider.swift in Sources */,
@@ -386,15 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D429799A27401809003BE995 /* FakeData.swift in Sources */,
+				D429799827401734003BE995 /* MainViewModelTests.swift in Sources */,
 				D4990E1C27393507000697DE /* ArrivalCardViewModelTests.swift in Sources */,
-				D45286F627325CD2001E2153 /* NextTrainTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D45286F827325CD2001E2153 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,11 +368,6 @@
 			isa = PBXTargetDependency;
 			target = D45286DA27325CD0001E2153 /* NextTrain */;
 			targetProxy = D45286F227325CD2001E2153 /* PBXContainerItemProxy */;
-		};
-		D45286FE27325CD2001E2153 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D45286DA27325CD0001E2153 /* NextTrain */;
-			targetProxy = D45286FD27325CD2001E2153 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -623,46 +581,6 @@
 			};
 			name = Release;
 		};
-		D452870C27325CD2001E2153 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XNZZR3TAH8;
-				INFOPLIST_FILE = NextTrainUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = tech.joeyck.NextTrainUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NextTrain;
-			};
-			name = Debug;
-		};
-		D452870D27325CD2001E2153 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XNZZR3TAH8;
-				INFOPLIST_FILE = NextTrainUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = tech.joeyck.NextTrainUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NextTrain;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -689,15 +607,6 @@
 			buildConfigurations = (
 				D452870927325CD2001E2153 /* Debug */,
 				D452870A27325CD2001E2153 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D452870B27325CD2001E2153 /* Build configuration list for PBXNativeTarget "NextTrainUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D452870C27325CD2001E2153 /* Debug */,
-				D452870D27325CD2001E2153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

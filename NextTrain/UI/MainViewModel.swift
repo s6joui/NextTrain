@@ -16,7 +16,7 @@ class MainViewModel {
     var stationInfo: [SubwayStation]?
     var arrivals = Observable<[LineCardViewModel]>(nil)
     var arrivalsLoading = Observable<Bool>(true)
-    var arrivalsError = Observable<Error?>(nil)
+    var arrivalsError = Observable<Error>(nil)
 
     init(
         arrivalDataProvider: ArrivalDataProvider,
@@ -45,11 +45,12 @@ class MainViewModel {
                         lineName: lineName,
                         trainNumber: trainNumber,
                         status: info.arvlMsg2 ?? "",
-                        currentStationName: info.arvlMsg3 ?? "",
+                        currentLocation: info.arvlMsg3 ?? "",
                         baseStation: info.bstatnNm ?? "",
                         direction: info.updnLine ?? "",
                         heading: subwayHeading,
-                        lineColor: lineColor
+                        lineColor: lineColor,
+                        arrivalStationName: station
                     )
                     if let line = data.firstIndex(where: { $0.lineName == lineName }) {
                         data[line].arrivals.append(vm)

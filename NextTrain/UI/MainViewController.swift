@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  NextTrain
 //
 //  Created by Joey on 3/11/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     let viewModel: MainViewModel!
 
@@ -22,17 +22,13 @@ class ViewController: UIViewController {
     let searchResultsController = StationSearchResultsViewController()
     lazy var searchController = UISearchController(searchResultsController: searchResultsController)
 
-    var currentStation = "홍대입구" //홍대입구 합정 마포 서울
+    var currentStation = "검암" //홍대입구 합정 마포 서울 디지털미디어시티
     var lineInfo: [LineCardViewModel] = []
 
     weak var timer: Timer?
 
-    init() {
-        self.viewModel = MainViewModel(
-            arrivalDataProvider: SeoulSubwayArrivalDataProvider(),
-            subwayInfoProvider: SeoulSubwayInfoDataProvider(),
-            stationCsvReader: StationDataCsvReader()
-        )
+    init(viewModel: MainViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -102,17 +98,6 @@ class ViewController: UIViewController {
             guard let data = data else { return }
             self?.lineInfo = data
             self?.tableView.reloadData()
-            data.forEach{
-                print("===== \($0.lineName) =====")
-                $0.arrivals.forEach { (info: ArrivalCardViewModel) in
-                    print("🚇 \(info.trainNumber) - \(info.baseStation)(\(info.direction))")
-                    print("📍 \(info.currentStationName)")
-                    print("ℹ️ \(info.status)")
-                    print("")
-                }
-                print("==================")
-                print("")
-            }
         }
         viewModel.arrivalsError.bind{ [weak self] error in
             print(error as Any)
@@ -139,7 +124,7 @@ class ViewController: UIViewController {
 
 // MARK: TableView
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lineInfo.count
@@ -163,7 +148,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: SearchBar
 
-extension ViewController: UISearchBarDelegate, UISearchControllerDelegate, StationSearchDelegate {
+extension MainViewController: UISearchBarDelegate, UISearchControllerDelegate, StationSearchDelegate {
 
     public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard let query = searchBar.text else { return }

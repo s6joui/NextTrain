@@ -8,27 +8,17 @@
 import Foundation
 import UIKit
 
-struct LineCardViewModel {
-
-    let lineName: String
-    let stationName: String
-    let nextStation: String
-    let previousStation: String
-    var arrivals: [ArrivalCardViewModel]
-    let lineColor: UIColor
-
-}
-
 struct ArrivalCardViewModel {
 
     let lineName: String
     let trainNumber: String
     let status: String
-    let currentStationName: String
+    let currentLocation: String
     let baseStation: String
     let direction: String
     let heading: SubwayHeading
     let lineColor: UIColor
+    let arrivalStationName: String
 
     private var minutesRemaining: Double? {
         if let minuteChar = status.firstIndex(of: "분") {
@@ -68,6 +58,8 @@ struct ArrivalCardViewModel {
             return NSLocalizedString("arriving_soon", comment: "")
         } else if let stations = stationsRemaining {
             return String(format: NSLocalizedString("stations_remaining", comment: ""), stations)
+        } else if status.contains(arrivalStationName) {
+            return status.replacingOccurrences(of: arrivalStationName, with: "")
         } else {
             return status
         }
