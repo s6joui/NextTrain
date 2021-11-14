@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
     let searchResultsController = StationSearchResultsViewController()
     lazy var searchController = UISearchController(searchResultsController: searchResultsController)
 
-    var currentStation = "검암" //홍대입구 합정 마포 서울 디지털미디어시티
+    var currentStation = "홍대입구" //홍대입구 합정 마포 서울 디지털미디어시티
     var lineInfo: [LineCardViewModel] = []
 
     weak var timer: Timer?
