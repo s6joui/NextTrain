@@ -144,11 +144,12 @@ class ArrivalCardViewModelTests: XCTestCase {
             lineName: "2",
             trainNumber: "123123",
             status: status,
-            currentStationName: "홍대입구",
+            currentLocation: "이촌",
             baseStation: "용문",
             direction: "이촌",
             heading: .left,
-            lineColor: .red
+            lineColor: .red,
+            arrivalStationName: "홍대입구"
         )
     }
 

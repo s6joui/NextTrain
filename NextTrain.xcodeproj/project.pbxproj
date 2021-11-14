@@ -12,10 +12,10 @@
 		D429798B273F7992003BE995 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429798A273F7992003BE995 /* Date+Extension.swift */; };
 		D429798D273FA414003BE995 /* StationSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429798C273FA414003BE995 /* StationSearchResultsViewController.swift */; };
 		D429798F273FFF04003BE995 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429798E273FFF04003BE995 /* Environment.swift */; };
-		D4297991273FFFA8003BE995 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4297990273FFFA8003BE995 /* Secrets.plist */; };
 		D4297996274015CF003BE995 /* LineCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4297995274015CF003BE995 /* LineCardViewModel.swift */; };
 		D429799827401734003BE995 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429799727401734003BE995 /* MainViewModelTests.swift */; };
 		D429799A27401809003BE995 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429799927401809003BE995 /* FakeData.swift */; };
+		D429799D2740D151003BE995 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4297990273FFFA8003BE995 /* Secrets.plist */; };
 		D45286DF27325CD0001E2153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286DE27325CD0001E2153 /* AppDelegate.swift */; };
 		D45286E127325CD0001E2153 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286E027325CD0001E2153 /* SceneDelegate.swift */; };
 		D45286E327325CD0001E2153 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45286E227325CD0001E2153 /* MainViewController.swift */; };
@@ -305,7 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D45286EB27325CD2001E2153 /* LaunchScreen.storyboard in Resources */,
-				D4297991273FFFA8003BE995 /* Secrets.plist in Resources */,
+				D429799D2740D151003BE995 /* Secrets.plist in Resources */,
 				D4990E1F273939DD000697DE /* Localizable.strings in Resources */,
 				D45286E827325CD2001E2153 /* Assets.xcassets in Resources */,
 				D4990E142739088B000697DE /* station_data.csv in Resources */,
