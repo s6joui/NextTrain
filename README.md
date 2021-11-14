@@ -1,6 +1,6 @@
 # NextTrain
 iOS app that shows real-time information about subway train arrivals in Seoul, South Korea.
-The app was implemented using clean code and TDD principals. It has no external dependencies so it should just run by opening the project file.
+The app was implemented using clean code and TDD principles. It has no external dependencies so it should just run by opening the project file.
 
 ## Requirements
 * XCode 13
