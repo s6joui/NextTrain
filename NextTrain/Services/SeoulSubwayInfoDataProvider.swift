@@ -45,7 +45,7 @@ class SeoulSubwayInfoDataProvider: SubwayInfoDataProvider {
         "1069": UIColor(red: 0.44, green: 0.60, blue: 0.82, alpha: 1.00),
         "1071": UIColor(red: 0.90, green: 0.00, blue: 0.40, alpha: 1.00),
         "1075": UIColor(red: 0.90, green: 0.80, blue: 0.00, alpha: 1.00),
-        "1077": UIColor(red: 0.95, green: 0.85, blue: 0.12, alpha: 1.00),
+        "1077": UIColor(red: 0.85, green: 0.18, blue: 0.12, alpha: 1.00),
     ]
 
     func fetchStation(from query: String) -> SubwayStation {
